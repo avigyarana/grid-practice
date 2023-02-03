@@ -6,11 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .box{
+            background: #0f75bc;
+            padding: 140px;
+        }
+        .img{
+            background: #0f75bc;
+            height: 140px; width: 100%;
+        }
+        .flex{
+            display: flex;
+            margin: 10px 0; 
+            gap: 20px;
+            flex-direction: column;
+        }
+        @media(min-width: 992px){
+            .flex{
+                flex-direction: row;
+            }
+            
+        }
+        @media(min-width: 481px) and (max-width: 768px){
+            .bx{
+                display: flex;
+            }
+        }
         
     </style>
 </head>
 <body>
+    <div clas="box"></div>
+    <div class="flex">
+        <div class="bx">
+            <div class="img"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, doloremque!</p>
+        </div>
+        <div class="bx">
+            <div class="img"></div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, possimus.</p>
+        </div>
+        <div class="bx">
+            <div class="img"></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, atque!</p>
+        </div>
+    </div>
 
     
 </body>
-</html>
+</html> 
